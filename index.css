@@ -17,8 +17,8 @@ header {
     width:92vw;
     padding:2vh 4vw;
     position:relative;
-    color:#0f422c;
-    background: #ffffff;
+    color:#e0e8e2;
+    background: #467750;
     transition:0.4s ease-in-out;
     z-index:2;
 }
@@ -63,7 +63,7 @@ header table {
 }
 #logo {
     font-size:36px;
-    color:#34af72;
+    color:#e0e8e2;
 }
 #navigation {
     text-align:right;
@@ -73,7 +73,7 @@ header table {
     text-decoration:none;
     padding:5px 4px;
     border-bottom:2px solid transparent;
-    margin-left:1vw;
+    margin-left:3vw;
     transition:0.4s ease-in-out;
     font-size:25px;
 }
@@ -90,9 +90,16 @@ header table {
 #about {
     align-self: center;
     text-align:center;
-    height:47vh;
+    height:91vh;
     margin: 0 auto;  /* Add this line to center the section horizontally */
-    background:#14ff91
+    background-image: url('https://i0.wp.com/www.bishoprook.com/wp-content/uploads/2021/05/placeholder-image-gray-16x9-1.png?ssl=1');  /* Replace with your image path */
+    background-size: cover;  /* or 'contain' depending on your preference */
+    background-position: center center;
+    background-repeat: no-repeat;
+    display: flex;  /* Add flexbox */
+    flex-direction: column;  /* Stack items vertically */
+    justify-content: center;  /* Center vertically */
+    align-items: center;  /* Center horizontally (works with text-align) */
 }
 #about h1 {
     color:#0f422c;
@@ -144,7 +151,7 @@ header table {
     text-align:left;
 }
 .social {
-    color:#34af72;
+    color:#e0e8e2;
     font-size:23px;
     padding:12px 17px;
     border-radius:50%;
@@ -181,7 +188,7 @@ header table {
 #rightImage {
     width:100%;
     height:95vh;
-    background:linear-gradient(0deg,rgba(255, 44, 90, 0.8),rgba(255, 44, 90, 0.8)),url("https://images.unsplash.com/photo-1506057527569-6a0285b2fcc1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=60") center center;
+    background:linear-gradient(0deg,rgba(64, 255, 124, 0.8),rgba(64, 255, 124, 0.8)),url("https://i0.wp.com/www.bishoprook.com/wp-content/uploads/2021/05/placeholder-image-gray-16x9-1.png?ssl=1") center center;
     background-size:cover;
     background-repeat:no-repeat;
 }
@@ -223,16 +230,23 @@ header table {
     width:8%;
 }
 #contact {
+    background-color: #467750;
+    color:#e0e8e2;
     width:92vw;
     padding:6vh 4vw;
 }
 #contact h1 {
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-weight:800;
     padding:5px 0px;
-    border-bottom:4px solid #34af72;
-    width:10%;
+    /* border-bottom:4px solid #ffffff; */
+    width:80%;
+    margin-left: auto;
 }
 #contact table {
     width:100%;
+    margin-left: auto;
+    max-width: 90%;
 }
 #contact table tr td {
     width:50%;
@@ -244,9 +258,12 @@ header table {
     font-weight:bold;
 }
 #inner_table tr td{
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-weight:200;
     padding:10px 20px !important;
 }
 #contact form {
+    color:#e0e8e2;
     width:100%;
 }
 #contact form input {
@@ -259,7 +276,7 @@ header table {
     font-family: 'be-vietnam-pro-medium', sans-serif;
     font-size:18px;
     transition:0.4s ease-in-out;
-    color:#000;
+    color:#e0e8e2;
     font-weight:bold;
 }
 #contact form textarea {
@@ -274,16 +291,18 @@ header table {
     background:transparent;
     resize:none;
     transition:0.4s ease-in-out;
-    color:#000;
+    color:#e0e8e2;
     font-weight:bold;
 }
 #contact form input:focus {
+    color: #e0e8e2;
     outline:none;
-    border-bottom:3px solid rgba(255, 44, 90,1);
+    border-bottom:3px solid #e0e8e2;
 }
 #contact form textarea:focus {
+    color:#e0e8e2;
     outline:none;
-    border-bottom:3px solid rgba(255, 44, 90,1);
+    border-bottom:3px solid #e0e8e2;
 }
 #address {
     position:relative;
@@ -406,3 +425,109 @@ button:focus {
         color:#000;
     }
 } */
+
+#collage-section {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    background: #fff;
+}
+
+.collage-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    width: 100%;
+    height: 100vh; /* Adjust as needed */
+    gap: 0; /* Remove gaps for seamless collage */
+}
+
+.collage-item {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.image-item {
+    position: relative;
+}
+
+.image-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.text-item {
+    background: #467750; /* Background */
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.text-item h3 {
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-weight: 800;
+    font-size: 48px;
+    margin: 0 0 20px 0;
+    color: #fff;
+}
+
+.text-item p {
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 1.6;
+    margin: 0;
+    max-width: 80%;
+}
+
+/* Responsive styles for collage */
+@media (max-width: 1024px) {
+    .collage-grid {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        height: auto;
+        min-height: 200vh;
+    }
+    
+    .text-item {
+        padding: 30px;
+    }
+    
+    .text-item h3 {
+        font-size: 36px;
+    }
+    
+    .text-item p {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 768px) {
+    .collage-grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        height: auto;
+    }
+    
+    .collage-item {
+        min-height: 300px;
+    }
+    
+    .text-item {
+        padding: 25px;
+    }
+    
+    .text-item h3 {
+        font-size: 32px;
+    }
+    
+    .text-item p {
+        font-size: 20px;
+    }
+}
