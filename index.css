@@ -18,7 +18,8 @@ header {
     padding:2vh 4vw;
     position:relative;
     color:#e0e8e2;
-    background: #467750;
+    /* background: #467750; */
+    background: linear-gradient(to right, #467750, #0f422c);
     transition:0.4s ease-in-out;
     z-index:2;
 }
@@ -230,7 +231,8 @@ header table {
     width:8%;
 }
 #contact {
-    background-color: #467750;
+    /* background-color: #467750; */
+    background: linear-gradient(to bottom, #467750, #0f422c);  /* Vertical gradient from light to dark */
     color:#e0e8e2;
     width:92vw;
     padding:6vh 4vw;
