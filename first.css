@@ -81,13 +81,6 @@ header table {
 #navigation a:hover{
     border-bottom:2px solid #fff;
 }
-#top_part {
-    width:100%;
-    border:2vh solid #fff;
-}
-#top_part tr td{
-    width:50%;
-}
 #about {
     align-self: center;
     text-align:center;
@@ -120,37 +113,6 @@ header table {
     max-width: 50%;  /* or whatever percentage/px you want */
     margin: 0 auto;  /* centers the narrower text */
     padding:10px 0px;
-}
-#mission {
-    width:84% !important;
-    height:95vh;
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
-    text-align:left;
-    padding:0px 8%;
-}
-#mission h1 {
-    color:#0f422c;
-    font-family: 'Be Vietnam Pro', sans-serif;
-    font-weight:800;
-    font-size:45px;
-    word-wrap:break-word;
-}
-#mission h2 {
-    color:#0f422c;
-    /* font-size:45px; */
-    word-wrap:break-word;
-    font-family: 'Be Vietnam Pro', sans-serif;
-    font-weight:200;
-}
-#mission table {
-    width:70%;
-    margin-top:4vh;
-}
-#mission table tr td {
-    width:20% !important;
-    text-align:left;
 }
 .social {
     color:#e0e8e2;
@@ -187,19 +149,14 @@ header table {
     color:#fff;
     background:#34af72;
 }
-#rightImage {
-    width:100%;
-    height:95vh;
-    background:linear-gradient(0deg,rgba(64, 255, 124, 0.8),rgba(64, 255, 124, 0.8)),url("https://i0.wp.com/www.bishoprook.com/wp-content/uploads/2021/05/placeholder-image-gray-16x9-1.png?ssl=1") center center;
-    background-size:cover;
-    background-repeat:no-repeat;
-}
-#work {
+#memories {
     width:92vw;
     padding:6vh 4vw;
     font-weight:bold;
 }
-#work h1 {
+#memories h1 {
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-weight:900;
     padding:5px 0px;
     border-bottom:4px solid #34af72;
     width:6%;
@@ -237,19 +194,19 @@ header table {
     color:#e0e8e2;
     width:100vw;
     padding: 2vh 2vw;
-    margin-top: 0vh;
 }
 #contact h1 {
     font-family: 'Be Vietnam Pro', sans-serif;
     font-weight:800;
-    padding:5px 0px;
+    padding:0vh 0vw;
     border-bottom:3px solid #34af72;
     /* border-bottom:4px solid #ffffff; */
     width:11%;
     margin: 0;
-    margin-top: 10vh;
-    margin-left: 30px;
+    margin-top: 3vh;
+    margin-left: 5vw;
     padding-bottom: 6px;
+    margin-bottom: -6vh;
     text-align: left;
 }
 #contact table {
@@ -262,7 +219,7 @@ header table {
 }
 #inner_div{
     position: relative;
-    top: -50px;
+    top: 0vh;
     margin-top: 0;
 }
 #inner_div table{
@@ -360,6 +317,13 @@ button:focus {
     background: #fff;
 }
 
+#team-section h1{
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-weight:900;
+    border-bottom:4px solid #34af72;
+    width: 17%;
+}
+
 .team-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -383,8 +347,8 @@ button:focus {
 }
 
 .member-image {
-    width: 140px;
-    height: 140px;
+    width: 170px;
+    height: 170px;
     border-radius: 50%;
     object-fit: cover;
     flex-shrink: 0;
@@ -410,6 +374,157 @@ button:focus {
     font-size: 16px;
     color: #467750;
     margin: 0;
+}
+
+#video-section {
+    width: 100%;
+    padding: 0vh 0vw;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.video-container {
+    position: relative;
+    width: 100%;
+    /* max-width: 1200px; */
+    /* border-radius: 10px; */
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.video-thumbnail {
+    width: 100%;
+    height: auto;
+    display: block;
+    filter: brightness(0.6); /* Darken thumbnail by 40% */
+}
+
+.video-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.5); /* Increased from 0.4 to 0.5 for more darkening */
+    padding: 40px;
+    box-sizing: border-box;
+}
+
+.video-title {
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-weight: 700;
+    font-size: 36px;
+    color: #fff;
+    text-align: center;
+    margin: 0 0 30px 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.video-logo {
+    max-width: 550px;
+    width: 100%;
+    height: auto;
+    margin: 0 0 30px 0;
+    display: block;
+}
+
+.video-button {
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    color: #fff;
+    background: transparent;
+    border: 2px solid #fff;
+    padding: 12px 40px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.video-button:hover {
+    background: #fff;
+    color: #0f422c;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(255, 255, 255, 0.3);
+}
+#robot_section {
+    width:100%;
+    border:2vh solid #fff;
+}
+#robot_section tr td{
+    width:50%;
+}
+#robot {
+    width:84% !important;
+    height:95vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    text-align:left;
+    padding:0px 8%;
+}
+#robot h1 {
+    color:#0f422c;
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-weight:800;
+    font-size:45px;
+    word-wrap:break-word;
+}
+#robot h2 {
+    color:#0f422c;
+    /* font-size:45px; */
+    word-wrap:break-word;
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-weight:200;
+}
+#robot table {
+    width:70%;
+    margin-top:4vh;
+}
+#robot table tr td {
+    width:20% !important;
+    text-align:left;
+}
+#rightImage {
+    width:100%;
+    height:95vh;
+    background:linear-gradient(0deg,rgba(64, 255, 124, 0.8),rgba(64, 255, 124, 0.8)),url("https://i0.wp.com/www.bishoprook.com/wp-content/uploads/2021/05/placeholder-image-gray-16x9-1.png?ssl=1") center center;
+    background-size:cover;
+    background-repeat:no-repeat;
+}
+
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    #video-section {
+        padding: 4vh 2vw;
+    }
+    
+    .video-title {
+        font-size: 24px;
+    }
+    
+    .video-logo {
+        max-width: 40%;
+        margin: 0 0 20px 0;
+    }
+    
+    .video-button {
+        font-size: 16px;
+        padding: 10px 30px;
+    }
+    
+    .video-overlay {
+        padding: 20px;
+    }
 }
 
 /* Responsive design */
