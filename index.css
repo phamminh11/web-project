@@ -60,7 +60,7 @@ header table {
     height:90%;
     background-size:contain !important;
     background-repeat:no-repeat !important;
-    margin:0px auto;
+    /* margin:0px auto; */
 }
 #logo {
     font-size:36px;
@@ -91,8 +91,7 @@ header table {
 #about {
     align-self: center;
     text-align:center;
-    max-height:91vh;
-    margin: 0 auto;  /* Add this line to center the section horizontally */
+    margin: 0 auto;  /*Add this line to center the section horizontally */
     background-image: url('https://i0.wp.com/www.bishoprook.com/wp-content/uploads/2021/05/placeholder-image-gray-16x9-1.png?ssl=1');  /* Replace with your image path */
     background-size: cover;  /* or 'contain' depending on your preference */
     background-position: center center;
@@ -101,6 +100,7 @@ header table {
     flex-direction: column;  /* Stack items vertically */
     justify-content: center;  /* Center vertically */
     align-items: center;  /* Center horizontally (works with text-align) */
+    height:91vh;
 }
 #about h1 {
     color:#0f422c;
@@ -108,7 +108,7 @@ header table {
     font-weight:800;
     font-size: 55px;
     max-width: 60%;  /* or whatever percentage/px you want */
-    margin: 0 auto;  /* centers the narrower text */
+    margin: 0 auto; /* centers the narrower text */
     line-height: 2;
 }
 
@@ -118,9 +118,16 @@ header table {
     font-weight:200;
     max-width: 50%;  /* or whatever percentage/px you want */
     margin: 0 auto;  /* centers the narrower text */
-    padding:10px 0px;
+    padding:2vh;
 }
-#mission {
+/* #top_part {
+    width:100%;
+    border:2vh solid #fff;
+}
+#top_part tr td{
+    width:50%;
+} */
+/* #mission {
     width:84% !important;
     height:95vh;
     display:flex;
@@ -139,10 +146,10 @@ header table {
 #mission h2 {
     color:#0f422c;
     /* font-size:45px; */
-    word-wrap:break-word;
+    /* word-wrap:break-word;
     font-family: 'Be Vietnam Pro', sans-serif;
     font-weight:200;
-}
+} */
 #mission table {
     width:70%;
     margin-top:4vh;
@@ -150,7 +157,7 @@ header table {
 #mission table tr td {
     width:20% !important;
     text-align:left;
-}
+} */
 .social {
     color:#e0e8e2;
     font-size:23px;
@@ -445,6 +452,7 @@ button:focus {
     padding: 0;
     margin: 0;
     background: #fff;
+    margin-top:0vh;
 }
 
 .collage-grid {
